@@ -84,6 +84,7 @@ load("data.bedgraph") |> @filter(_.chrom == "chr19" && _.first > 49302900 && _.l
 
 @testset "Integrations" begin
     include("integrations/test-DataFrames.jl")
+    include("integrations/test-GenomicFeatures.jl")
 end # testset Transformers
 
 println()
